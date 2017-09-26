@@ -2,14 +2,30 @@
 
 //css here
 h1 {
+    font-size: 60px;
+    padding: 10px 10px 10px 30px;
     text-align: center;
+    color: white;
+    font-family: helvetica, sans-serif
+    
 }
 ul {
+    // display: inline;
+    font-family: helvetica, sans-serif;
     text-align: center;
+    color: orangered;
+    font-size: 40px;
 }
 p {
     text-align: center;
+    color: darkslategray;
+    text-shadow: white 2px 2px 2px;
+    font-style: bold;
+    font-family: helvetica, sans-serif;
+    font-size: 32px;
 }
 body {
-    background-image: url("https://www.spredfast.com/sites/default/files/images/blog/blog%20header.png");
+    background-image: url("segway.jpg");
 }
+
+
