@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+u1 = User.create(name: "Joe", email: "Joe@gmail.com", city: "Venice", password: "bubbles")
+co = Callout.create(name:"Barista", body:"Real crazy", city: "Venice", tag: "people", user: u1)

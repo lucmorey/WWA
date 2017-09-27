@@ -5,27 +5,52 @@ h1 {
     font-size: 60px;
     padding: 10px 10px 10px 30px;
     text-align: center;
+    // text-shadow:darkslategray 2px 2px 2px;    
     color: white;
-    font-family: helvetica, sans-serif
+    font-family: helvetica, sans-serif;
     
 }
 ul {
     // display: inline;
     font-family: helvetica, sans-serif;
     text-align: center;
-    color: orangered;
-    font-size: 40px;
+    color: orange;
+    font-size: 32px;
+    list-style: none;
+}
+li {
+    text-align: center;
+    color: orange;
+    
+    // text-shadow: black 1px 2px 2px;
+  
 }
 p {
     text-align: center;
-    color: darkslategray;
-    text-shadow: white 2px 2px 2px;
+    color: orange;
+    text-shadow:darkslategray 2px 2px 2px;
     font-style: bold;
     font-family: helvetica, sans-serif;
     font-size: 32px;
 }
 body {
     background-image: url("segway.jpg");
+    background-repeat: no-repeat;
 }
+.col-md-4.control-label{
+    // color: orange;
+    // text-shadow: black 1px 2px 2px;
 
 
+}
+li#current-user.nav-item {
+   
+    color: slategray; 
+    font-size: 24px;
+    padding: 15px 0 0 666px;
+}
+a.navbar-brand {
+    background: orange;
+    font-family: helvetica, sans-serif;
+
+}

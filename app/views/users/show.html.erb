@@ -1,2 +1,14 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<h1>Callouts</h1>
+
+<p><%=@thisuser.name %></p>
+
+<ul><% @thisuser.callouts.reverse.each do |u| %>
+    <li><%= u.name %></li>
+    <li><%= u.body %></li>
+    <li><%= u.created_at %></li>
+    <br>
+    <% end %>
+</ul>
+
+
+

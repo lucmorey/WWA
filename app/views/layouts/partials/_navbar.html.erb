@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#navpryx">Pryx</a>
+    <%= link_to 'pryx', root_path, class: 'navbar-brand' %>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -7,15 +7,17 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <% if logged_in? %>
+            
             <li class="nav-item">
-            <%= link_to 'Logout', logout_path, class: 'nav-link', method: 'delete' %>
+            <%= link_to 'new', new_callout_path, class: 'nav-link' %>
             </li>
             <li class="nav-item">
-            <%= link_to 'Edit Profile', edit_user_path(current_user), class: 'nav-link' %>
+            <%= link_to 'callouts', callouts_path, class: 'nav-link' %>
+            <li class="nav-item" id="current-user"><%= current_user.name %></li>
             </li>
             <li class="nav-item">
-            <%= link_to 'Delete Account', user_path(current_user), class: 'nav-link', method: 'delete' %>
-            </li>
+                    <%= link_to 'logout', logout_path, class: 'nav-link', method: 'delete' %>
+                    </li>
         <% else %>
             <li class="nav-item">
                 <%= link_to 'Log In', new_session_path, class: 'nav-link' %>
