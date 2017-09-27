@@ -33,9 +33,11 @@ p {
     font-family: helvetica, sans-serif;
     font-size: 32px;
 }
+
 body {
     background-image: url("segway.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .col-md-4.control-label{
     // color: orange;
@@ -53,4 +55,8 @@ a.navbar-brand {
     background: orange;
     font-family: helvetica, sans-serif;
 
+}
+
+.list-group-item {
+    background-color: rgba(255, 255, 255, 0.8)
 }

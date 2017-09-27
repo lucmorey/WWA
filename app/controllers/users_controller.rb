@@ -32,7 +32,7 @@ class UsersController < ApplicationController
     if @user.update(user_params)
       redirect_to user_path(@user)
     else
-      flash[:danger] = "Check Yo Self"
+      flash[:danger] = "error"
       redirect_to new_user_path
     end
   end

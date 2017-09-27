@@ -1,0 +1,8 @@
+<div class="jumbotron">
+    <h1 class="display-3"><%= @callout.name %></h1>
+    <p class="lead"><%= @callout.body %></p>
+    <hr class="my-4">
+    <p class="lead">
+        <%= link_to "delete", callout_path(@callout), method: "delete", class:"btn btn-danger btn-lg"%>
+    </p>
+</div>

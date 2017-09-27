@@ -5,7 +5,7 @@ class CalloutsController < ApplicationController
 
     def show
         @callout = Callout.find(params[:id])
-        @callouts = Callout.all
+        
     end
     def new 
         @callout = Callout.new
@@ -21,7 +21,14 @@ class CalloutsController < ApplicationController
         @callout.user = current_user
         @callout.save
         redirect_to current_user
-     
+
+        end
+
+    def destroy
+        @callout = Callout.find(params[:id])
+        @callout.destroy
+        
+        redirect_to callouts_path
     end 
 
     private 
