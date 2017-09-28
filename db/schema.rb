@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170925190706) do
+ActiveRecord::Schema.define(version: 20170927235043) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,10 @@ ActiveRecord::Schema.define(version: 20170925190706) do
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "calloutpic_file_name"
+    t.string "calloutpic_content_type"
+    t.integer "calloutpic_file_size"
+    t.datetime "calloutpic_updated_at"
     t.index ["user_id"], name: "index_callouts_on_user_id"
   end
 
@@ -33,6 +37,10 @@ ActiveRecord::Schema.define(version: 20170925190706) do
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "profilepic_file_name"
+    t.string "profilepic_content_type"
+    t.integer "profilepic_file_size"
+    t.datetime "profilepic_updated_at"
   end
 
   add_foreign_key "callouts", "users"

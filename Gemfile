@@ -5,6 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'paperclip'
+gem 'aws-sdk', '~> 2.3'
+gem 'dotenv-rails', :group => :development
+
 gem 'bootstrap', '~> 4.0.0.beta'
 gem 'jquery-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

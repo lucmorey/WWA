@@ -5,7 +5,7 @@ h1 {
     font-size: 60px;
     padding: 10px 10px 10px 30px;
     text-align: center;
-    // text-shadow:darkslategray 2px 2px 2px;    
+    text-shadow:darkslategray 1px 1px 1px;    
     color: white;
     font-family: helvetica, sans-serif;
     
@@ -58,4 +58,22 @@ a.navbar-brand {
 
 .list-group-item {
     background-color: rgba(255, 255, 255, 0.8)
+}
+
+
+
+.navbarSupportedContent {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+input {
+    
+color: orangered;
+
 }

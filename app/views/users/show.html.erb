@@ -2,22 +2,16 @@
 
 <p>callouts from <%=@thisuser.name %></p>
 
-<!-- <ul><% @thisuser.callouts.reverse.each do |u| %>
-    <li><%= u.name %></li>
-    <li><%= u.body %></li>
-    <li><%= 'from ' + time_ago_in_words(u.created_at) + ' ago' %></li>
-    
-    <br>
-    <% end %>
-</ul> -->
-
-
-<ul><% @thisuser.callouts.reverse.each do |u| %>
+<ul><% @thisuser.callouts.reverse.each do |c| %>
 <div class="jumbotron">
-        <h1 class="display-3"><%= u.name %></h1>
-        <p class="lead"><%= u.body %></p>
+         <div><%= image_tag c.user.profilepic.url(:thumb) %></div>
+        <h1 class="display-3"><%= c.name %></h1>     
+        <p class="lead"><%= c.body %></p>
         <hr class="my-4">
-        <p class="lead"<%= 'from ' + time_ago_in_words(u.created_at) + ' ago' %></p>
+        <p class="lead"<%= 'from ' + time_ago_in_words(c.created_at) + ' ago' %></p>
     </div>
     <% end %>
 </ul>
+
+
+d

@@ -33,6 +33,6 @@ class CalloutsController < ApplicationController
 
     private 
     def callout_params
-    params.require(:callout).permit(:name, :body, :city, :tag)
+    params.require(:callout).permit(:name, :body, :city, :tag, :calloutpic)
     end
 end

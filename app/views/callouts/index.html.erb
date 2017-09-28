@@ -3,10 +3,9 @@
 <% @callouts.each do |c| %>
     <li class="list-group-item">
         <%= link_to callout_path(c) do %>
-            <%= c.name %> | <%= time_ago_in_words(c.created_at) %> ago
+            <%= c.name %> ~ <%= time_ago_in_words(c.created_at) %> ago
         <% end %>
     </li>
 
 <% end %>
 </ul>
-
