@@ -1,15 +1,17 @@
 <h1>Fresh Callout</h1>
 <p class="callout-form">
 <%= form_for @callout do |f| %>
-<%= f.text_field :name, placeholder: "callout" %>
+<div class="centers">
+<%= f.text_field :name, placeholder: "callout"%>
 <%= f.text_field :city, placeholder: "location" %>
 <%= f.text_field :tag, placeholder: "tag" %>
+</div>
 </p>
 <br>
 <p>
 <%= f.text_area :body, :cols => "30", :rows => "5", placeholder: "offense" %>
 <%= f.submit "post" %>
-<div><%= f.file_field :calloutpic %></div>
+<div class="centers"><%= f.file_field :calloutpic %></div>
 </p>
 <% end %>
 

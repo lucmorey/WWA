@@ -1,17 +1,22 @@
-<h1>Callouts</h1>
+<h1>callouts from <%=@thisuser.name %></h1>
 
-<p>callouts from <%=@thisuser.name %></p>
-
-<ul><% @thisuser.callouts.reverse.each do |c| %>
 <div class="jumbotron">
-         <div><%= image_tag c.user.profilepic.url(:thumb) %></div>
-        <h1 class="display-3"><%= c.name %></h1>     
-        <p class="lead"><%= c.body %></p>
-        <hr class="my-4">
-        <p class="lead"<%= 'from ' + time_ago_in_words(c.created_at) + ' ago' %></p>
+    <div>
+        <%= image_tag @thisuser.profilepic.url(:medium) %>
+        <%= @thisuser.name %>
     </div>
+    
+    <% @thisuser.callouts.reverse.each do |c| %>
+        <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="<%= c.calloutpic.url(:medium) %>" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title"><%= c.name %></h4>
+                <p class="card-text"><%= c.body %></p>
+                <p><%= 'from ' + time_ago_in_words(c.created_at) + ' ago' %></p>
+                <a href="#" class="btn btn-warning">delete</a>
+            </div>
+        </div>
     <% end %>
-</ul>
+</div>
 
 
-d

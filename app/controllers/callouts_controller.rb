@@ -1,6 +1,11 @@
 class CalloutsController < ApplicationController
     def index
-        @callouts = Callout.all.order(created_at: :desc)
+        # @callouts = Callout.all.order(created_at: :desc)
+        name = "name ILIKE :query"
+        tag = "tag ILIKE :query"
+        city = "city ILIKE :query"
+        query = {query: "%#{params[:query]}%"}
+        @callouts = Callout.where("#{name} OR #{tag} OR #{city}", query).order(created_at: :desc)
     end
 
     def show

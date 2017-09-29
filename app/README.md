@@ -1,34 +1,26 @@
-#Worldwide Asshole
+#pryx
 
 
 ##Correcting the world, one callout at a time.
 
-The intention of this application is to create a simple, effective pubilic utility with the purpose of calling out human beings on their poor behavior and the recklass or insensitive treatment of others. This site makes no claims of being a reliable review service, does not provide fair unbiased feedback, nor does it provide any positive social media function whatsoever. It is simply a device where terrible human beings can callout other terrible human beings on poor ediquitte and bad social behavior.
+The intention of this application is to create a simple public whistleblowing utility for the purpose of calling out human beings on poor public behavior and the recklass or insensitive treatment of others. Users can cite etiquitte violations using a method called "callouts." A callout carries a few attributes, the name of the offender, a brief explaination of the incident, the location, a subject matter tag, and an optional image. This site makes no claims of being a reliable review service, does not provide fair or unbiased information, nor does it provide any positive social media function whatsoever. Unlike most other platforms, pryx embraces its negativity in the spirit of valuing honesety over a marketing and manipulation norm that feeds existensial emptiness while providing a platform for harrassment and online bullying. Pryx is simply a place where terrible human beings can give "negative-stars" feedback to other terrible human beings for bullshit behavior. 
+
+
+- Created with Ruby on Rails (5.1.4) incorporating Bootstrap, postgres, heroku, amazon web services.
 
 
 
+Current bugs and issues:
+
+- Delete button on callout cards not working.
 
 
+Future features: 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Menus to browse callouts by tag or location.
+- Comments on callouts
 
-Things you may want to cover:
+Link to trello: 
+https://trello.com/b/2ZMBI0H1/pryx
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

@@ -1,9 +1,14 @@
 <p>All Callouts</p>
 <ul class="list-group">
+    <form class="form-inline my-2 my-lg-0" action="<%= callouts_path %>" method="get">
+        <input name="query" class="form-control mr-sm-2" type="text" placeholder="search offenders" aria-label="Search">
+        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+    </form>
 <% @callouts.each do |c| %>
+
     <li class="list-group-item">
         <%= link_to callout_path(c) do %>
-            <%= c.name %> ~ <%= time_ago_in_words(c.created_at) %> ago
+            <%= c.name %> ~ <%= c.city %> ~ <%= c.tag %> ~ <%= time_ago_in_words(c.created_at) %> ago
         <% end %>
     </li>
 

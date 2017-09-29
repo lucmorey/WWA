@@ -38,12 +38,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.col-md-4.control-label{
-    // color: orange;
-    // text-shadow: black 1px 2px 2px;
 
 
-}
 li#current-user.nav-item {
    
     color: slategray; 
@@ -68,12 +64,24 @@ a.navbar-brand {
 
 img {
     display: block;
-    margin: auto;
-    width: 40%;
+    // margin: auto;
+    // width: 40%;
 }
 
-input {
+// input {
     
-color: orangered;
+// color: orangered;
+
+// }
+.centers {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.jumbotron * {
+    text-align: left;
+}
+.card {
+display: inline-block;
 
 }

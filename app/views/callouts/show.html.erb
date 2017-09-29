@@ -1,6 +1,9 @@
 <div class="jumbotron">
     <h1 class="display-3"><%= @callout.name %></h1>
+    <p class="lead">location: <%= @callout.city %></p>
+    <p class="lead">tag: <%= @callout.tag %></p>
     <p class="lead"><%= @callout.body %></p>
+
     <hr class="my-4">
     <div><%= image_tag @callout.calloutpic.url(:medium) %></div>
     <p class="lead">
