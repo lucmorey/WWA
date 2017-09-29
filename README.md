@@ -14,13 +14,13 @@ Create a user and post callouts. Read other peoples callouts. Be informed, stay 
 
 Current bugs and issues:
 
-- Delete button on callout cards not working.
+- Delete button on callout cards not working right.
 
 
 Future features: 
 
 - Menus to browse callouts by tag or location.
-- Comments on callouts
+- thumbs up review system on callouts
 
 Link to trello: 
 https://trello.com/b/2ZMBI0H1/pryx
